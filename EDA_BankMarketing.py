@@ -278,7 +278,7 @@ with st.sidebar:
     """, unsafe_allow_html=True)
 
 # ==========================================
-# MÓDULO 1: HOME (PRESENTACIÓN REFORZADA)
+# MÓDULO 1: HOME (PRESENTACIÓN OPTIMIZADA)
 # ==========================================
 if modulo == "Módulo 1: Home":
     st.markdown("""
@@ -289,27 +289,31 @@ if modulo == "Módulo 1: Home":
     """, unsafe_allow_html=True)
 
     # ------------------------------------------
-    # SECCIÓN RESALTADA: OBJETIVO Y FICHA
+    # SECCIÓN RESALTADA: OBJETIVO Y FICHA (MÁXIMO PROTAGONISMO)
     # ------------------------------------------
     col_a, col_b = st.columns([1.8, 1])
 
     with col_a:
         st.markdown("""
-        <div class="tech-card" style="border-left: 6px solid #008DDA; background: #FFFFFF; padding: 24px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08);">
-            <h3 style="color: #0B192C !important; margin-top: 0; font-size: 1.4rem; font-weight: 700;">🎯 Objetivo del Proyecto</h3>
-            <p style="font-size: 1.05rem; line-height: 1.6; color: #334155;">
-            Esta plataforma analítica ha sido diseñada para diagnosticar y entender los patrones de comportamiento asociados a las campañas de captación de depósitos a plazo fijo en el sector bancario.
+        <div class="tech-card" style="border-left: 8px solid #008DDA; background: #FFFFFF; padding: 28px; box-shadow: 0 12px 20px -4px rgba(0,141,218,0.15); border-radius: 12px;">
+            <h2 style="color: #0B192C !important; margin-top: 0; font-size: 1.55rem; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+                🎯 Objetivo del Proyecto
+            </h2>
+            <p style="font-size: 1.08rem; line-height: 1.7; color: #334155; margin-bottom: 0;">
+            Esta plataforma analítica ha sido desarrollada para diagnosticar y profundizar en los patrones de comportamiento asociados a las campañas de captación de depósitos a plazo fijo en el sector bancario.
             <br><br>
-            A través de un <b>Análisis Exploratorio de Datos (EDA)</b> exhaustivo, la aplicación evalúa perfiles sociodemográficos, canales de contacto y variables macroeconómicas sin recurrir a modelos predictivos, orientándose a la toma de decisiones comerciales eficientes.
+            A través de un <b>Análisis Exploratorio de Datos (EDA)</b> riguroso, la aplicación evalúa perfiles sociodemográficos, hábitos de contacto y variables macroeconómicas sin la necesidad de modelos predictivos, orientándose a respaldar decisiones comerciales estratégicas e informadas.
             </p>
         </div>
         """, unsafe_allow_html=True)
 
     with col_b:
         st.markdown("""
-        <div class="tech-card" style="border-left: 6px solid #1E3E62; background: #FFFFFF; padding: 24px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08);">
-            <h3 style="color: #0B192C !important; margin-top: 0; font-size: 1.4rem; font-weight: 700;">👨‍💻 Ficha del Entregable</h3>
-            <p style="font-size: 1rem; line-height: 1.7; color: #334155; margin-bottom: 0;">
+        <div class="tech-card" style="border-left: 8px solid #1E3E62; background: #FFFFFF; padding: 28px; box-shadow: 0 12px 20px -4px rgba(30,62,98,0.15); border-radius: 12px;">
+            <h2 style="color: #0B192C !important; margin-top: 0; font-size: 1.55rem; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+                👨‍💻 Ficha del Entregable
+            </h2>
+            <p style="font-size: 1.02rem; line-height: 1.8; color: #334155; margin-bottom: 0;">
                 <b>Autor:</b> Profesional Analista<br>
                 <b>Programa:</b> Especialización Python for Analytics<br>
                 <b>Institución:</b> DMC Institute<br>
@@ -322,40 +326,39 @@ if modulo == "Módulo 1: Home":
     st.markdown("<br>", unsafe_allow_html=True)
 
     # ------------------------------------------
-    # SUBSECCIÓN: ARQUITECTURA TECNOLÓGICA (TAMAÑO MÁS GRANDE Y LEGIBLE)
+    # SUBSECCIÓN: ARQUITECTURA TECNOLÓGICA (TAMAÑO COMPACTO Y SUTIL)
     # ------------------------------------------
-    st.markdown("<h3 style='color: #0B192C !important; font-size: 1.3rem; font-weight: 700; margin-bottom: 16px;'>🛠️ Arquitectura Tecnológica</h3>", unsafe_allow_html=True)
+    st.markdown("<h4 style='color: #1E3E62 !important; font-size: 1.05rem; font-weight: 700; margin-bottom: 12px;'>🛠️ Arquitectura Tecnológica</h4>", unsafe_allow_html=True)
     
     c1, c2, c3, c4 = st.columns(4)
     with c1:
         st.markdown("""
-        <div class="tech-card" style="padding: 20px; text-align: center; border-left: 4px solid #008DDA;">
-            <h3 style="color: #008DDA !important; font-size: 1.25rem; font-weight: 700; margin: 0 0 6px 0;">🐍 Python 3.10+</h3>
-            <p style="font-size: 1rem; font-weight: 600; color: #1E3E62; margin: 0;">Lenguaje Core</p>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-left: 3px solid #008DDA; padding: 10px 12px; border-radius: 6px; text-align: center;">
+            <p style="color: #008DDA; font-size: 0.95rem; font-weight: 700; margin: 0;">🐍 Python 3.10+</p>
+            <p style="font-size: 0.8rem; color: #64748B; margin: 2px 0 0 0;">Lenguaje Core</p>
         </div>
         """, unsafe_allow_html=True)
     with c2:
         st.markdown("""
-        <div class="tech-card" style="padding: 20px; text-align: center; border-left: 4px solid #008DDA;">
-            <h3 style="color: #008DDA !important; font-size: 1.25rem; font-weight: 700; margin: 0 0 6px 0;">⚡ Streamlit</h3>
-            <p style="font-size: 1rem; font-weight: 600; color: #1E3E62; margin: 0;">Framework Interactivo</p>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-left: 3px solid #008DDA; padding: 10px 12px; border-radius: 6px; text-align: center;">
+            <p style="color: #008DDA; font-size: 0.95rem; font-weight: 700; margin: 0;">⚡ Streamlit</p>
+            <p style="font-size: 0.8rem; color: #64748B; margin: 2px 0 0 0;">Framework Interactivo</p>
         </div>
         """, unsafe_allow_html=True)
     with c3:
         st.markdown("""
-        <div class="tech-card" style="padding: 20px; text-align: center; border-left: 4px solid #008DDA;">
-            <h3 style="color: #008DDA !important; font-size: 1.25rem; font-weight: 700; margin: 0 0 6px 0;">📊 Pandas / NumPy</h3>
-            <p style="font-size: 1rem; font-weight: 600; color: #1E3E62; margin: 0;">Procesamiento Vectorial</p>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-left: 3px solid #008DDA; padding: 10px 12px; border-radius: 6px; text-align: center;">
+            <p style="color: #008DDA; font-size: 0.95rem; font-weight: 700; margin: 0;">📊 Pandas / NumPy</p>
+            <p style="font-size: 0.8rem; color: #64748B; margin: 2px 0 0 0;">Procesamiento Vectorial</p>
         </div>
         """, unsafe_allow_html=True)
     with c4:
         st.markdown("""
-        <div class="tech-card" style="padding: 20px; text-align: center; border-left: 4px solid #008DDA;">
-            <h3 style="color: #008DDA !important; font-size: 1.25rem; font-weight: 700; margin: 0 0 6px 0;">🎨 Seaborn</h3>
-            <p style="font-size: 1rem; font-weight: 600; color: #1E3E62; margin: 0;">Visualización Estadística</p>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-left: 3px solid #008DDA; padding: 10px 12px; border-radius: 6px; text-align: center;">
+            <p style="color: #008DDA; font-size: 0.95rem; font-weight: 700; margin: 0;">🎨 Seaborn</p>
+            <p style="font-size: 0.8rem; color: #64748B; margin: 2px 0 0 0;">Visualización Estadística</p>
         </div>
         """, unsafe_allow_html=True)
-
 # ==========================================
 # MÓDULO 2: CARGA DEL DATASET
 # ==========================================
