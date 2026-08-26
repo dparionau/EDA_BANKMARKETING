@@ -314,7 +314,7 @@ if modulo == "Módulo 1: Home":
                 👨‍💻 Ficha del Entregable
             </h2>
             <p style="font-size: 1.02rem; line-height: 1.8; color: #334155; margin-bottom: 0;">
-                <b>Autor:</b> Profesional Analista<br>
+                <b>Autor:</b> Fredy Pariona<br>
                 <b>Programa:</b> Especialización Python for Analytics<br>
                 <b>Institución:</b> DMC Institute<br>
                 <b>Docente:</b> MSc. Carlos Carrillo Villavicencio<br>
