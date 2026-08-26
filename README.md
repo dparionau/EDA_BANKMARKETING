@@ -2,7 +2,7 @@
 # 🏦 Bank Marketing EDA Application (Streamlit)
 
 ## 📌 Descripción del Proyecto
-Aplicación interactiva desarrollada en Python y Streamlit enfocada en el **Análisis Exploratorio de Datos (EDA)** sobre el dataset `BankMarketing.csv`. Diseñada como proyecto del curso **Especialización en Python for Analytics** impartido por Dilic Institute.
+Aplicación interactiva desarrollada en Python y Streamlit enfocada en el **Análisis Exploratorio de Datos (EDA)** sobre el dataset `BankMarketing.csv`. Diseñada como proyecto del curso **Especialización en Python for Analytics** impartido por DMC Institute.
 
 La herramienta permite entender los factores cuantitativos y cualitativos que influyen en la tasa de respuesta comercial de la banca, aplicando métricas descriptivas, análisis bivariados y filtros dinámicos.
 
