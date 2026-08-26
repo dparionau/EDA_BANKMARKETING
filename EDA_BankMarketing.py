@@ -278,7 +278,7 @@ with st.sidebar:
     """, unsafe_allow_html=True)
 
 # ==========================================
-# MÓDULO 1: HOME (PRESENTACIÓN)
+# MÓDULO 1: HOME (PRESENTACIÓN REFORZADA)
 # ==========================================
 if modulo == "Módulo 1: Home":
     st.markdown("""
@@ -288,13 +288,16 @@ if modulo == "Módulo 1: Home":
         </div>
     """, unsafe_allow_html=True)
 
+    # ------------------------------------------
+    # SECCIÓN RESALTADA: OBJETIVO Y FICHA
+    # ------------------------------------------
     col_a, col_b = st.columns([1.8, 1])
 
     with col_a:
         st.markdown("""
-        <div class="tech-card">
-            <h4>🎯 Objetivo del Proyecto</h4>
-            <p>
+        <div class="tech-card" style="border-left: 6px solid #008DDA; background: #FFFFFF; padding: 24px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08);">
+            <h3 style="color: #0B192C !important; margin-top: 0; font-size: 1.4rem; font-weight: 700;">🎯 Objetivo del Proyecto</h3>
+            <p style="font-size: 1.05rem; line-height: 1.6; color: #334155;">
             Esta plataforma analítica ha sido diseñada para diagnosticar y entender los patrones de comportamiento asociados a las campañas de captación de depósitos a plazo fijo en el sector bancario.
             <br><br>
             A través de un <b>Análisis Exploratorio de Datos (EDA)</b> exhaustivo, la aplicación evalúa perfiles sociodemográficos, canales de contacto y variables macroeconómicas sin recurrir a modelos predictivos, orientándose a la toma de decisiones comerciales eficientes.
@@ -304,26 +307,54 @@ if modulo == "Módulo 1: Home":
 
     with col_b:
         st.markdown("""
-        <div class="tech-card" style="border-left-color: #1E3E62;">
-            <h4>👨‍💻 Ficha del Entregable</h4>
-            <p><b>Autor:</b> Profesional Analista</p>
-            <p><b>Programa:</b> Especialización Python for Analytics</p>
-            <p><b>Institución:</b> DMC Institute</p>
-            <p><b>Docente:</b> MSc. Carlos Carrillo Villavicencio</p>
-            <p><b>Año:</b> 2026</p>
+        <div class="tech-card" style="border-left: 6px solid #1E3E62; background: #FFFFFF; padding: 24px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08);">
+            <h3 style="color: #0B192C !important; margin-top: 0; font-size: 1.4rem; font-weight: 700;">👨‍💻 Ficha del Entregable</h3>
+            <p style="font-size: 1rem; line-height: 1.7; color: #334155; margin-bottom: 0;">
+                <b>Autor:</b> Profesional Analista<br>
+                <b>Programa:</b> Especialización Python for Analytics<br>
+                <b>Institución:</b> DMC Institute<br>
+                <b>Docente:</b> MSc. Carlos Carrillo Villavicencio<br>
+                <b>Año:</b> 2026
+            </p>
         </div>
         """, unsafe_allow_html=True)
 
-    st.markdown("### 🛠️ Arquitectura Tecnológica")
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # ------------------------------------------
+    # SUBSECCIÓN: ARQUITECTURA TECNOLÓGICA (TAMAÑO MÁS GRANDE Y LEGIBLE)
+    # ------------------------------------------
+    st.markdown("<h3 style='color: #0B192C !important; font-size: 1.3rem; font-weight: 700; margin-bottom: 16px;'>🛠️ Arquitectura Tecnológica</h3>", unsafe_allow_html=True)
+    
     c1, c2, c3, c4 = st.columns(4)
     with c1:
-        st.markdown("<div class='tech-card'><h4>🐍 Python 3.10+</h4><p>Lenguaje Core</p></div>", unsafe_allow_html=True)
+        st.markdown("""
+        <div class="tech-card" style="padding: 20px; text-align: center; border-left: 4px solid #008DDA;">
+            <h3 style="color: #008DDA !important; font-size: 1.25rem; font-weight: 700; margin: 0 0 6px 0;">🐍 Python 3.10+</h3>
+            <p style="font-size: 1rem; font-weight: 600; color: #1E3E62; margin: 0;">Lenguaje Core</p>
+        </div>
+        """, unsafe_allow_html=True)
     with c2:
-        st.markdown("<div class='tech-card'><h4>⚡ Streamlit</h4><p>Framework Interactivo</p></div>", unsafe_allow_html=True)
+        st.markdown("""
+        <div class="tech-card" style="padding: 20px; text-align: center; border-left: 4px solid #008DDA;">
+            <h3 style="color: #008DDA !important; font-size: 1.25rem; font-weight: 700; margin: 0 0 6px 0;">⚡ Streamlit</h3>
+            <p style="font-size: 1rem; font-weight: 600; color: #1E3E62; margin: 0;">Framework Interactivo</p>
+        </div>
+        """, unsafe_allow_html=True)
     with c3:
-        st.markdown("<div class='tech-card'><h4>📊 Pandas / NumPy</h4><p>Procesamiento Vectorial</p></div>", unsafe_allow_html=True)
+        st.markdown("""
+        <div class="tech-card" style="padding: 20px; text-align: center; border-left: 4px solid #008DDA;">
+            <h3 style="color: #008DDA !important; font-size: 1.25rem; font-weight: 700; margin: 0 0 6px 0;">📊 Pandas / NumPy</h3>
+            <p style="font-size: 1rem; font-weight: 600; color: #1E3E62; margin: 0;">Procesamiento Vectorial</p>
+        </div>
+        """, unsafe_allow_html=True)
     with c4:
-        st.markdown("<div class='tech-card'><h4>🎨 Seaborn</h4><p>Visualización Estadística</p></div>", unsafe_allow_html=True)
+        st.markdown("""
+        <div class="tech-card" style="padding: 20px; text-align: center; border-left: 4px solid #008DDA;">
+            <h3 style="color: #008DDA !important; font-size: 1.25rem; font-weight: 700; margin: 0 0 6px 0;">🎨 Seaborn</h3>
+            <p style="font-size: 1rem; font-weight: 600; color: #1E3E62; margin: 0;">Visualización Estadística</p>
+        </div>
+        """, unsafe_allow_html=True)
 
 # ==========================================
 # MÓDULO 2: CARGA DEL DATASET
